@@ -1,7 +1,7 @@
 #ifndef SkillsChecker_LOGGER_H
 #define SkillsChecker_LOGGER_H
 
-#include <common.h>
+#include <common.hpp>
 #include <../vendor/utf8.h>
 
 // comment this line if you want something simple like std::cout
@@ -35,7 +35,13 @@ namespace SkillsChecker
 		}
 		
 	private:
-		static void Reset();
+		inline static void Reset()
+		{
+			m_u8string = "";
+			m_u32string = U"";
+			m_u8stream.str(std::string());
+			m_u32stream.str(std::u32string());
+		}
 		
 		template <typename T>
 		inline static void u8add(T t) { m_u8stream << t; }

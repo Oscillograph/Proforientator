@@ -8,13 +8,6 @@ namespace SkillsChecker
 	std::stringstream Logger::m_u8stream;
 	u32stringstream Logger::m_u32stream;
 	
-	void Logger::Reset(){
-		m_u8string = "";
-		m_u32string = U"";
-		m_u8stream.str(std::string());
-		m_u32stream.str(std::u32string());
-	}
-	
 	void Logger::Flush(int mode, int color){
 		// flush into command line interface
 		if (mode == 0) 
