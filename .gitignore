@@ -1,0 +1,15 @@
+/outdated
+/Makefile.win
+*.bak
+*.gch
+*.o
+*.bookmarks
+*.debug
+*.dev
+*.exe
+*.layout
+/SkillsChecker_private.h
+/SkillsChecker.rc
+/SkillsChecker.res
+/main.s
+
