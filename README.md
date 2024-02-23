@@ -1,133 +1,17 @@
-Content example.
+## Skills Checker ##
+An utility to help in personal skills management. Its main purpose are:
++ present the person' skills and their current level of development;
++ advice on skillsets to develop in order to fill certain expectations (for example, get a job).
 
-Уровни оценки:
-0 -- незнаком;
-2 -- знаком;
-3 -- есть пет-проекты;
-4 -- разбираюсь в чужих проектах;
-5 -- широкий кругозор;
-6 -- могу работать в команде как участник;
-7 -- могу создавать новые решения;
-8 -- могу работать в команде как эксперт;
-9 -- могу руководить работой команды;
-10 -- БОГ.
+The program should allow to:
++ Add/Remove/Edit skills;
++ Add/Remove/Edit skill groups;
++ Edit the level of development of a skill;
++ Add/Remove/Edit skillsets associated with a job;
++ Present skills according to the selected level of development (for example, show highest/lowest or those not acquired yet);
++ Present possible jobs corresponding to current skills development levels.
 
-
-Технологии ..... 0<-Уровень->10
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-С++17...............ХХХХХХХ---
-PHP.................XXXХХХ----
-JS..................XXXХХХ----
-HTML................XXXXXХ----
-CSS.................XXXХ------
-Matlab..............XXXX------
-Python..............XXXX------
-Flash, ActionScript.XXXX------
-SQL.................XXXX------
-GLSL................XXX-------
-OpenGL..............XXX-------
-UltimatePP..........XXX-------
-NoSQL...............XX--------
-CMake...............XX--------
-Lua.................X---------
-C#..................X---------
-C++20...............X---------
-Android.............X---------
-Docker..............X---------
-Kubernetes..........X---------
-Ruby................X---------
-Java................X---------
-LLVM................X---------
-Rust................X---------
-Vulkan..............X---------
-DirectX.............X---------
-Kotlin..............X---------
-Go..................X---------
-
-
-Запчасти ....... 0<-Уровень->10
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-jQuery..............XXXX------
-SDL.................XXXX------
-Dear ImGui..........XXXХ------
-Qt..................X---------
-CUDA................X---------
-FLTK................X---------
-bgfx................X---------
-wxWidgets...........X---------
-SFML................X---------
-GSL.................X---------
-raylib..............X---------
-Boost...............X---------
-perforce............X---------
-Sciter..............X---------
-
-
-Инструменты .... 0<-Уровень->10
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-MS Office...........XXXXXXX---
-Scrivener...........XXXXXXX---
-yWriter.............XXXXXX----
-Git.................XXXXXX----
-Denwer..............XXXXXX----
-FileZilla Client....XXXXXX----
-Sothink SWF Decomp..XXXXXX----
-Photoshop...........XXXXXX----
-GIMP................XXXXXX----
-Open Server Panel...XXXX------
-CodeBlocks..........XXXX------
-GitExtensions.......XXXX------
-MS Visual Studio....XXXX------
-VS Code.............XXXX------
-Red Panda C++.......XXXX------
-Sublime Text........XXXX------
-Eclipse C++.........XXXX------
-Matlab..............XXXX------
-Mathcad.............XXXX------
-Mathematica.........XXXX------
-WinSCP..............XXXX------
-Slax................XXX-------
-UltimatePP..........XXX-------
-Blender.............XXX-------
-3ds Max.............XXX-------
-MixCraft............XXX-------
-MSYS................XXX-------
-MSVC................XXX-------
-MinGW...............XXX-------
-QT Creator..........XX--------
-GCC.................XX--------
-GDB.................XX--------
-Unreal Engine.......XX--------
-Unity...............XX--------
-IDA.................XX--------
-Jira................X---------
-SVN.................X---------
-Mercurial...........X---------
-Ghidra..............X---------
-Tiled...............X---------
-Fuse................X---------
-Poser...............X---------
-
-
-Знания ......... 0<-Уровень->10
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Soft Skills.........XXXXXXXXX-
-Радиолокация........ХХХХХХХХ--
-Обработка сигналов..XXXXXXХ---
-Структуры данных....XXXXXXX---
-Английский..........ХХХХХХХ---
-Копирайтинг.........ХХХХХХХ---
-Редактура текстов...XXXXXX----
-Алгоритмы...........ХХХХХХ----
-Паттерны............ХХХХХХ----
-Админ. сайтов.......XXXXXХ----
-Компиляторы.........XX--------
-Нейросети...........XX--------
-Машинное обучение...XX--------
-SOLID...............XX--------
-Agile...............XX--------
-Linux...............XX--------
-MQTT................X---------
-REST................X---------
-Делопроизводство....X---------
-Ведение бизнеса.....X---------
+## Tech Stack ##
++ C++17
++ Color Console
++ Utf-8 For Cpp
