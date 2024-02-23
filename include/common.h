@@ -1,5 +1,5 @@
-#ifndef SKILLSCHECKER_COMMON_H
-#define SKILLSCHECKER_COMMON_H
+#ifndef PROFORIENTATOR_COMMON_H
+#define PROFORIENTATOR_COMMON_H
 
 #include <iostream>
 #include <string> 

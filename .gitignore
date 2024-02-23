@@ -8,8 +8,8 @@
 *.dev
 *.exe
 *.layout
-/build/SkillsChecker_private.res
-/SkillsChecker_private.h
-/SkillsChecker_private.rc
+/build/Proforientator_private.res
+/Proforientator_private.h
+/Proforientator_private.rc
 /main.s
 

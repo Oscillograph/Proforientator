@@ -1,7 +1,7 @@
-#ifndef SkillsChecker_LOGGER_H
-#define SkillsChecker_LOGGER_H
+#ifndef PROFORIENTATOR_LOGGER_H
+#define PROFORIENTATOR_LOGGER_H
 
-#include <common.hpp>
+#include <common.h>
 #include <../vendor/utf8.h>
 
 // comment this line if you want something simple like std::cout
