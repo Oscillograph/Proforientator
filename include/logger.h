@@ -5,7 +5,7 @@
 #include <../vendor/utf8.h>
 
 // comment this line if you want something simple like std::cout
-#define SkillsChecker_LOGGER_CLASS
+#define PROFORIENTATOR_LOGGER_CLASS
 
 namespace SkillsChecker
 {
@@ -56,7 +56,7 @@ namespace SkillsChecker
 	};
 }
 
-#ifndef SkillsChecker_LOGGER_CLASS
+#ifndef PROFORIENTATOR_LOGGER_CLASS
 #define CONSOLE_LOG(...)			std::cout << "SkillsChecker: " << __VA_ARGS__ << "\n";
 #define CONSOLE_DEBUG(...)			std::cout << "SkillsChecker: " << __VA_ARGS__ << "\n";
 #define CONSOLE_ERROR(...)			std::cout << "SkillsChecker: " << __VA_ARGS__ << "\n";

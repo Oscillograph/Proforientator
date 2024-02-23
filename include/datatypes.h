@@ -4,13 +4,13 @@
 #include <common.h>
 #include <unordered_map>
 
+struct Skill;
+struct SkillGroup;
+struct SkillRegistry;
+struct Job;
+
 namespace SkillsChecker
 {
-	struct Skill;
-	struct SkillGroup;
-	struct SkillRegistry;
-	struct Job;
-	
 	struct Skill
 	{
 		Skill(const std::string& n, const std::string& g, uint32_t l)
