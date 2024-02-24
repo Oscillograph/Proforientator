@@ -1,0 +1,213 @@
+SkillsGroup: Технологии
+  Skills:
+  - Name: C++17
+    Level: 7
+  - Name: PHP
+    Level: 6
+  - Name: JS
+    Level: 6
+  - Name: HTML
+    Level: 6
+  - Name: CSS
+    Level: 4
+  - Name: Matlab
+    Level: 4
+  - Name: Python
+    Level: 4
+  - Name: Flash, ActionScript
+    Level: 4
+  - Name: SQL
+    Level: 4
+  - Name: GLSL
+    Level: 3
+  - Name: OpenGL
+    Level: 3
+  - Name: UltimatePP
+    Level: 3
+  - Name: NoSQL
+    Level: 2
+  - Name: CMake
+    Level: 2
+  - Name: Lua
+    Level: 1
+  - Name: C#
+    Level: 1
+  - Name: C++20
+    Level: 1
+  - Name: Android
+    Level: 1
+  - Name: Docker
+    Level: 1
+  - Name: Kubernetes
+    Level: 1
+  - Name: Ruby
+    Level: 1
+  - Name: Java
+    Level: 1
+  - Name: LLVM
+    Level: 1
+  - Name: Rust
+    Level: 1
+  - Name: Vulkan
+    Level: 1
+  - Name: DirectX
+    Level: 1
+  - Name: Kotlin
+    Level: 1
+  - Name: Go
+    Level: 1
+SkillsGroup: Запчасти
+  - Name: jQuery
+    Level: 4
+  - Name: SDL
+    Level: 4
+  - Name: Dear ImGui
+    Level: 4
+  - Name: Qt
+    Level: 1
+  - Name: CUDA
+    Level: 1
+  - Name: FLTK
+    Level: 1
+  - Name: bgfx
+    Level: 1
+  - Name: wxWidgets
+    Level: 1
+  - Name: SFML
+    Level: 1
+  - Name: GSL
+    Level: 1
+  - Name: raylib
+    Level: 1
+  - Name: Boost
+    Level: 1
+  - Name: perforce
+    Level: 1
+  - Name: Sciter
+    Level: 1
+SkillsGroup: Инструменты
+  - Name: MS Office
+    Level: 7
+  - Name: Scrivener
+    Level: 7
+  - Name: yWriter
+    Level: 6
+  - Name: Git
+    Level: 6
+  - Name: Denwer
+    Level: 6
+  - Name: FileZilla Client
+    Level: 6
+  - Name: Sothink SWF Decompiler
+    Level: 6
+  - Name: Photoshop
+    Level: 6
+  - Name: GIMP
+    Level: 6
+  - Name: Open Server Panel
+    Level: 4
+  - Name: CodeBlocks
+    Level: 4
+  - Name: GitExtensions
+    Level: 4
+  - Name: MS Visual Studio
+    Level: 4
+  - Name: VS Code
+    Level: 4
+  - Name: Red Panda C++
+    Level: 4
+  - Name: Sublime Text
+    Level: 4
+  - Name: Eclipse C++
+    Level: 4
+  - Name: Matlab
+    Level: 4
+  - Name: Mathcad
+    Level: 4
+  - Name: Mathematica
+    Level: 4
+  - Name: WinSCP
+    Level: 4
+  - Name: Slax
+    Level: 3
+  - Name: UltimatePP
+    Level: 3
+  - Name: Blender
+    Level: 3
+  - Name: 3ds Max
+    Level: 3
+  - Name: MixCraft
+    Level: 3
+  - Name: MSYS
+    Level: 3
+  - Name: MSVC
+    Level: 3
+  - Name: MinGW
+    Level: 3
+  - Name: QT Creator
+    Level: 2
+  - Name: GCC
+    Level: 2
+  - Name: GDB
+    Level: 2
+  - Name: Unreal Engine
+    Level: 2
+  - Name: Unity
+    Level: 2
+  - Name: IDA
+    Level: 2
+  - Name: Jira
+    Level: 1
+  - Name: SVN
+    Level: 1
+  - Name: Mercurial
+    Level: 1
+  - Name: Ghidra
+    Level: 1
+  - Name: Tiled
+    Level: 1
+  - Name: Fuse
+    Level: 1
+  - Name: Poser
+    Level: 1
+SkillsGroup: Знания
+  - Name: Soft Skills
+    Level: 9
+  - Name: Радиолокация
+    Level: 8
+  - Name: Обработка сигналов
+    Level: 7
+  - Name: Структуры данных
+    Level: 7
+  - Name: Английский
+    Level: 7
+  - Name: Копирайтинг
+    Level: 7
+  - Name: Редактура текстов
+    Level: 6
+  - Name: Алгоритмы
+    Level: 6
+  - Name: Паттерны
+    Level: 6
+  - Name: Администрирование сайтов
+    Level: 6
+  - Name: Компиляторы
+    Level: 2
+  - Name: Нейросети
+    Level: 2
+  - Name: Машинное обучение
+    Level: 2
+  - Name: SOLID
+    Level: 2
+  - Name: Agile
+    Level: 2
+  - Name: Linux
+    Level: 2
+  - Name: MQTT
+    Level: 1
+  - Name: REST
+    Level: 1
+  - Name: Делопроизводство
+    Level: 1
+  - Name: Ведение бизнеса
+    Level: 1

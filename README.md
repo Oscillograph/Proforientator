@@ -15,3 +15,4 @@ The program should allow to:
 + C++17
 + Color Console
 + Utf-8 For Cpp
++ Yaml-Cpp
