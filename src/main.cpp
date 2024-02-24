@@ -4,8 +4,14 @@
 
 int main(int argc, char** argv) {
 	
-	// Wait for input.
+	std::string skillsFile = "../data/skillsDB.txt";
+	SkillsChecker::YamlWrapper YAMLWrapperObject;
+	YAMLWrapperObject.LoadDocument(skillsFile);
 	
+	
+	
+	// Wait for input.
+
 	// Process.
 	
 	// Display.

@@ -7,21 +7,21 @@
 
 namespace YAML {
 	template<>
-	struct convert<SkillsChecker::Skill> {
-		static Node encode(const SkillsChecker::Skill& rhs) {
+	struct convert<SkillsChecker::Skill*> {
+		static Node encode(const SkillsChecker::Skill* rhs) {
 			Node node;
-			node.push_back(rhs.name.c_str());
-			node.push_back(rhs.group.c_str());
-			node.push_back(rhs.level);
+			node.push_back(rhs->name.c_str());
+			node.push_back(rhs->group.c_str());
+			node.push_back(rhs->level);
 			return node;
 		}
 		
-		static bool decode(const Node& node, SkillsChecker::Skill& rhs) {
+		static bool decode(const Node& node, SkillsChecker::Skill* rhs) {
 			if (!node.IsSequence() || (node.size() != 3))
 				return false;
-			rhs.name = std::string(node[0].as<char*>());
-			rhs.group = std::string(node[1].as<char*>());
-			rhs.level = node[2].as<int>();
+			rhs->name = node[0].as<std::string>();
+			rhs->group = node[1].as<std::string>();
+			rhs->level = node[2].as<int>();
 			return true;
 		}
 	};
