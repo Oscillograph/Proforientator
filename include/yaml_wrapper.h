@@ -43,32 +43,35 @@ namespace SkillsChecker
 		// YAML is just a string
 		
 		// basic workflow
-		void NewDocument(); // create a new yaml document file
+//		void NewDocument(); // create a new yaml document file
 		bool LoadDocument(const std::string& filename) // load an existing yaml document from a file in memory
 		{
 			std::string text = FileIO::GetRawText(filename);
 			YAML::Node data = YAML::Load(text);
-			if (!data["Skill"]){
+			if (!data["Database"]){
 				return false;
 			}
 			
+			
 			std::string skillName = data["Skill"].as<std::string>();
 			
-			auto entities = data["Skills"];
-			if (entities) {
-				for (auto entity : entities) {
-					std::string name;
-					auto nameNode = entity["Skill"];
-					if (nameNode)
-						name = nameNode["Name"].as<std::string>();
+			YAML::Node skillsGroups = data["Database"];
+			
+			if (skillsGroups) {
+				for (YAML::Node skillsGroup : skillsGroups) {
+					std::string name = skillsGroup["SkillsGroup"].as<std::string>();
+					for (YAML::Node skill : skillsGroup)
+					{
+						std::string skillName = skill["Name"].as<std::string>();
+					}
 				}
 			}
 		}
 		
-		void OpenDocument(); // open a yaml document in memory to read or to write
-		void StartDocument(); // start the writing of yaml document
-		void FinishDocument(); // finish the writing of yaml document
-		void CloseDocument(); // close a yaml document in memory
+//		void OpenDocument(); // open a yaml document in memory to read or to write
+//		void StartDocument(); // start the writing of yaml document
+//		void FinishDocument(); // finish the writing of yaml document
+//		void CloseDocument(); // close a yaml document in memory
 		bool SaveDocument(const std::string& filename) // save a yaml document in a file
 		{
 			YAML::Emitter out;
@@ -81,7 +84,7 @@ namespace SkillsChecker
 			return FileIO::WriteRawText(filename, out.c_str());
 		}
 		
-		void DisplayDocument(); // display a yaml document as formatted text
+//		void DisplayDocument(); // display a yaml document as formatted text
 		
 
 		
