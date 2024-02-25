@@ -4,7 +4,7 @@
 #include <common.h>
 #include <unordered_map>
 
-namespace SkillsChecker
+namespace Proforientator
 {
 	struct Skill
 	{
@@ -21,7 +21,6 @@ namespace SkillsChecker
 		~SkillGroup();
 		
 		std::string name = "";
-		Skill* node = nullptr;
 		std::vector<Skill*> children = {};
 	};
 	
@@ -33,6 +32,9 @@ namespace SkillsChecker
 		void AddSkill(Skill* skill);
 		void RemoveSkill(Skill* skill);
 		void RemoveSkill(const std::string& name);
+		void AddGroup(SkillGroup* group);
+		
+		std::unordered_map<std::string, SkillGroup*>& GetGroups();
 		
 	private:
 		std::unordered_map<std::string, SkillGroup*> m_GroupsRegistry = {};

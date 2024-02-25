@@ -1,8 +1,8 @@
-Database
-  SkillsGroup: Технологии
+Database:
+  - SkillsGroup: Технологии
     Skills:
     - Name: C++17
-        Level: 7
+      Level: 7
     - Name: PHP
       Level: 6
     - Name: JS
@@ -57,7 +57,8 @@ Database
       Level: 1
     - Name: Go
       Level: 1
-  SkillsGroup: Запчасти
+  - SkillsGroup: Запчасти
+    Skills:
     - Name: jQuery
       Level: 4
     - Name: SDL
@@ -86,7 +87,8 @@ Database
       Level: 1
     - Name: Sciter
       Level: 1
-  SkillsGroup: Инструменты
+  - SkillsGroup: Инструменты
+    Skills:
     - Name: MS Office
       Level: 7
     - Name: Scrivener
@@ -171,7 +173,8 @@ Database
       Level: 1
     - Name: Poser
       Level: 1
-  SkillsGroup: Знания
+  - SkillsGroup: Знания
+    Skills:
     - Name: Soft Skills
       Level: 9
     - Name: Радиолокация
@@ -211,4 +214,4 @@ Database
     - Name: Делопроизводство
       Level: 1
     - Name: Ведение бизнеса
-      Level: 1		
+      Level: 1

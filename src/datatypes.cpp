@@ -1,19 +1,27 @@
 #include <datatypes.h>
+#include <logger.h>
 
-namespace SkillsChecker
+namespace Proforientator
 {
 	Skill::Skill(const std::string& _name, const std::string& _group, uint32_t _level)
 		: name(_name), group(_group), level(_level) 
 	{
 	};
 	
+	SkillGroup::SkillGroup()
+	{
+	}
+	
 	SkillGroup::~SkillGroup()
 	{
-		node = nullptr;
 		for (auto m : children)
 		{
 			m = nullptr;
 		}
+	}
+	
+	SkillRegistry::SkillRegistry()
+	{
 	}
 	
 	SkillRegistry::~SkillRegistry()
@@ -33,14 +41,22 @@ namespace SkillsChecker
 	
 	Skill* SkillRegistry::NewSkill(const std::string& name, const std::string& group, uint32_t level)
 	{
-		m_SkillsRegistry.push_back(new Skill(name, group, level));
-		return m_SkillsRegistry[m_SkillsRegistry.size()-1];
+		Skill* skill = new Skill(name, group, level);
+		AddSkill(skill);
+		return skill;
 	}
 	
 	void SkillRegistry::AddSkill(Skill* skill)
 	{
 		m_SkillsRegistry.push_back(skill);
-		m_GroupsRegistry[skill->group]->children.push_back(skill);
+		
+		if (m_GroupsRegistry.find(skill->group) == m_GroupsRegistry.end())
+		{
+			m_GroupsRegistry[skill->group] = new SkillGroup();
+			m_GroupsRegistry[skill->group]->name = skill->group;
+		} else {
+			m_GroupsRegistry[skill->group]->children.push_back(skill);
+		}
 	}
 	
 	void SkillRegistry::RemoveSkill(Skill* skill)
@@ -90,6 +106,22 @@ namespace SkillsChecker
 			m_SkillsRegistry.erase(it);
 			break;
 		}
+	}
+	
+	void SkillRegistry::AddGroup(SkillGroup* group)
+	{
+		if (m_GroupsRegistry.find(group->name) == m_GroupsRegistry.end())
+		{
+			m_GroupsRegistry[group->name] = new SkillGroup;
+			m_GroupsRegistry[group->name]->name = group->name;
+		} else {
+			CONSOLE_LOG("Couldn't add a group - it already existed in the registry.");
+		}
+	}
+	
+	std::unordered_map<std::string, SkillGroup*>& SkillRegistry::GetGroups()
+	{
+		return m_GroupsRegistry;
 	}
 	
 	Job::Job(const std::vector<Skill*>& reqs)
