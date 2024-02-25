@@ -36,7 +36,7 @@ namespace Proforientator
 	class YamlWrapper
 	{
 	public:
-		void SetSkillsRegistry(SkillRegistry* skillRegistry);
+		void UseSkillRegistry(SkillRegistry* skillRegistry);
 		
 		// YAML is just a string
 		

@@ -3,13 +3,14 @@
 #include <logger.h>
 
 int main(int argc, char** argv) {
+//	CONSOLE_CAPTION_BLACK("Hello, user!");
 	
+	// load database
 	std::string skillsFile = "../data/skillsDB.txt";
 	Proforientator::SkillRegistry skillsRegistry;
 	Proforientator::YamlWrapper YAMLWrapperObject;
-	YAMLWrapperObject.SetSkillsRegistry(&skillsRegistry);
+	YAMLWrapperObject.UseSkillRegistry(&skillsRegistry);
 	YAMLWrapperObject.LoadDocument(skillsFile);
-	// YAMLWrapperObject.SaveDocument("../data/skillsSave.txt");
 	
 	
 	
@@ -18,18 +19,22 @@ int main(int argc, char** argv) {
 	// Process.
 	
 	// Display.
-	CONSOLE_CAPTION_BLACK("Hello, user!");
-	CONSOLE_GREY("This is grey.");
-	CONSOLE_WHITE("This is white.");
-	CONSOLE_YELLOW("This is yellow.");
-	CONSOLE_DARKRED("This is dark red.");
-	CONSOLE_RED("This is red.");
-	CONSOLE_TEAL("This is teal.");
-	CONSOLE_CYAN("This is cyan.");
-	CONSOLE_BLUE("This is blue.");
-	CONSOLE_MAGENTA("This is magenta.");
-	CONSOLE_GREEN("This is green.");
+	CONSOLE_CAPTION_BLACK("- - - - - - - - - - - - - - - - - ------- - - - - - - - - - - - - - - - - - - -");
+	CONSOLE_CAPTION_BLACK("- - - - - - - - - - - Skills map - - - - - - - - - - - -");
+	CONSOLE_GREY("Skill not aquaried");
+	CONSOLE_WHITE("Skill aquired.");
+	CONSOLE_CYAN("Skill is almost perfect.");
+	
+	CONSOLE_CAPTION_BLACK("- - - - - - - - - - - - - - - - - ------- - - - - - - - - - - - - - - - - - - -");
+	CONSOLE_CAPTION_BLACK("- - - - - - - - -  Job requirements  - - - - - - - - - -");
+	CONSOLE_RED("Skill doesn't match requirements.");
+	CONSOLE_YELLOW("Skill matches requirements.");
+	CONSOLE_GREEN("Skill excedes requirements.");
+	
 	// Get back to waiting for input.
+	
+	// save database
+	YAMLWrapperObject.SaveDocument(skillsFile);
 	
 	return 0;
 }

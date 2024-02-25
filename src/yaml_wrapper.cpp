@@ -30,7 +30,7 @@ namespace Proforientator
 		return out;
 	}
 	
-	void YamlWrapper::SetSkillsRegistry(SkillRegistry* skillRegistry)
+	void YamlWrapper::UseSkillRegistry(SkillRegistry* skillRegistry)
 	{
 		m_SkillRegistry = skillRegistry;
 	}
@@ -48,24 +48,21 @@ namespace Proforientator
 		// std::string skillName = data["Skill"].as<std::string>();
 		
 		YAML::Node skillsGroups = data["Database"];
-		CONSOLE_LOG(skillsGroups.IsSequence());
 		
 		if (skillsGroups) {
 			for (YAML::Node skillsGroup : skillsGroups) {
-				CONSOLE_LOG(skillsGroup.IsSequence());
 				std::string skillsGroupName = skillsGroup["SkillsGroup"].as<std::string>();
-				CONSOLE_LOG(skillsGroupName);
+//				CONSOLE_LOG(skillsGroupName);
 				SkillGroup* group = new SkillGroup();
 				group->name = skillsGroupName;
 				m_SkillRegistry->AddGroup(group);
 				
 				YAML::Node skills = skillsGroup["Skills"];
-				CONSOLE_LOG(skills.IsSequence());
 				for (YAML::Node skill : skills)
 				{
 					std::string name = skill["Name"].as<std::string>();
 					uint32_t level = skill["Level"].as<int>();
-					CONSOLE_LOG(name, " : ", level);
+//					CONSOLE_LOG(name, " : ", level);
 					m_SkillRegistry->NewSkill(name, group->name, level);
 				}
 			}

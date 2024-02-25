@@ -87,17 +87,17 @@ private:
 #define CONSOLE_ASSERT(x, ...)		{ if (!(x)) { SkillsChecker_CORE_LOG(__VA_ARGS__); std::exit(-4); } }
 #define CONSOLE_DEBUG(...)			::Logger::Text("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(1, 0);
 
-#define CONSOLE_GREY(...)			::Logger::Message("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, -1);
-#define CONSOLE_YELLOW(...)			::Logger::Message("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, 0);
-#define CONSOLE_WHITE(...)			::Logger::Message("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, 1);
-#define CONSOLE_DARKRED(...)		::Logger::Message("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, 2);
-#define CONSOLE_RED(...)			::Logger::Message("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, 3);
-#define CONSOLE_TEAL(...)			::Logger::Message("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, 4);
-#define CONSOLE_CYAN(...)			::Logger::Message("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, 5);
-#define CONSOLE_BLUE(...)			::Logger::Message("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, 6);
-#define CONSOLE_MAGENTA(...)		::Logger::Message("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, 7);
-#define CONSOLE_GREEN(...)			::Logger::Message("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, 8);
-#define CONSOLE_CAPTION_BLACK(...)	::Logger::Message("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, 9);
+#define CONSOLE_GREY(...)			::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, -1);
+#define CONSOLE_YELLOW(...)			::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, 0);
+#define CONSOLE_WHITE(...)			::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, 1);
+#define CONSOLE_DARKRED(...)		::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, 2);
+#define CONSOLE_RED(...)			::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, 3);
+#define CONSOLE_TEAL(...)			::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, 4);
+#define CONSOLE_CYAN(...)			::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, 5);
+#define CONSOLE_BLUE(...)			::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, 6);
+#define CONSOLE_MAGENTA(...)		::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, 7);
+#define CONSOLE_GREEN(...)			::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, 8);
+#define CONSOLE_CAPTION_BLACK(...)	::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, 9);
 
 //#define CONSOLE_LOG(...)				::Logger::Text("App: ", __VA_ARGS__); ::Logger::Flush(0, 1);
 //#define CONSOLE_ERROR(...)			::Logger::Text("App: ", __VA_ARGS__); ::Logger::Flush(0, 3);
