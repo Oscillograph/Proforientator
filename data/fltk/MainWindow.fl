@@ -1,0 +1,51 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0309
+i18n_type 1
+i18n_include <libintl.h>
+i18n_function gettext
+header_name {.h}
+code_name {.cxx}
+widget_class UserInterface {open selected
+  xywh {902 413 826 378} type Double align 80 visible position_relative
+} {
+  Fl_Table {} {
+    label {Технологии} open
+    xywh {5 35 200 180}
+  } {}
+  Fl_Table {} {
+    label {Инструменты} open
+    xywh {210 35 200 180}
+  } {}
+  Fl_Table {} {
+    label {Запчасти} open
+    xywh {415 35 200 180}
+  } {}
+  Fl_Table {} {
+    label {Знания} open
+    xywh {620 35 200 180}
+  } {}
+  Fl_Table {} {
+    label {Требуемые навыки} open
+    xywh {5 265 200 110}
+  } {}
+  Fl_Table {} {
+    label {Специальности} open
+    xywh {620 270 200 105}
+  } {}
+  Fl_Button {} {
+    label {Новый навык}
+    xywh {215 230 130 25}
+  }
+  Fl_Button {} {
+    label {Найти специальность}
+    xywh {325 300 170 25}
+  }
+  Fl_Button {} {
+    label {Изменить навык}
+    xywh {345 230 130 25}
+  }
+  Fl_Button {} {
+    label {Удалить навык}
+    xywh {475 230 130 25}
+  }
+}
