@@ -1,8 +1,8 @@
 #ifndef PROFORIENTATOR_LOGGER_H
 #define PROFORIENTATOR_LOGGER_H
 
-#include <common.h>
-#include <../vendor/utf8.h>
+#include <include/common.h>
+#include <external/utf8.h>
 
 // comment this line if you want something simple like std::cout
 #define PROFORIENTATOR_LOGGER_CLASS
@@ -82,10 +82,10 @@ private:
 #define CONSOLE_ERROR(...)				std::cout << "App: " << __VA_ARGS__ << "\n";
 #define CONSOLE_ASSERT(x, ...)			{ if (!(x)) { SkillsChecker_LOG(__VA_ARGS__); std::exit(); } }
 #else
-#define CONSOLE_LOG(...)			::Logger::Text("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, 0);
-#define CONSOLE_ERROR(...)			::Logger::Text("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(0, 3);
+#define CONSOLE_LOG(...)			::Logger::Text("Proforientator: ", __VA_ARGS__); ::Logger::Flush(0, 0);
+#define CONSOLE_ERROR(...)			::Logger::Text("Proforientator: ", __VA_ARGS__); ::Logger::Flush(0, 3);
 #define CONSOLE_ASSERT(x, ...)		{ if (!(x)) { SkillsChecker_CORE_LOG(__VA_ARGS__); std::exit(-4); } }
-#define CONSOLE_DEBUG(...)			::Logger::Text("SkillsChecker: ", __VA_ARGS__); ::Logger::Flush(1, 0);
+#define CONSOLE_DEBUG(...)			::Logger::Text("Proforientator: ", __VA_ARGS__); ::Logger::Flush(1, 0);
 
 #define CONSOLE_GREY(...)			::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, -1);
 #define CONSOLE_YELLOW(...)			::Logger::Message(__VA_ARGS__); ::Logger::Flush(0, 0);

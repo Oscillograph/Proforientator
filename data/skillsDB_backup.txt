@@ -1,217 +1,757 @@
 Database:
-  - SkillsGroup: Технологии
+  - SkillsGroup: 1. Технологии
     Skills:
-    - Name: C++17
-      Level: 7
-    - Name: PHP
-      Level: 6
-    - Name: JS
-      Level: 6
-    - Name: HTML
-      Level: 6
-    - Name: CSS
-      Level: 4
-    - Name: Matlab
-      Level: 4
-    - Name: Python
-      Level: 4
-    - Name: Flash, ActionScript
-      Level: 4
-    - Name: SQL
-      Level: 4
-    - Name: GLSL
-      Level: 3
-    - Name: OpenGL
-      Level: 3
-    - Name: UltimatePP
-      Level: 3
-    - Name: NoSQL
-      Level: 2
-    - Name: CMake
-      Level: 2
-    - Name: Lua
-      Level: 1
-    - Name: C#
-      Level: 1
-    - Name: C++20
-      Level: 1
-    - Name: Android
-      Level: 1
-    - Name: Docker
-      Level: 1
-    - Name: Kubernetes
-      Level: 1
-    - Name: Ruby
-      Level: 1
-    - Name: Java
-      Level: 1
-    - Name: LLVM
-      Level: 1
-    - Name: Rust
-      Level: 1
-    - Name: Vulkan
-      Level: 1
-    - Name: DirectX
-      Level: 1
-    - Name: Kotlin
-      Level: 1
-    - Name: Go
-      Level: 1
-  - SkillsGroup: Запчасти
+      - Name: C++17
+        Level: 7
+        Requirements:
+          - Name: STL (C++17)
+            Level: 4
+          - Name: MSVC
+            Level: 2
+          - Name: MinGW
+            Level: 2
+          - Name: GCC
+            Level: 2
+          - Name: CLang
+            Level: 2
+          - Name: CMake
+            Level: 6
+          - Name: STL (C++17)
+            Level: 4
+          - Name: MSVC
+            Level: 2
+          - Name: MinGW
+            Level: 2
+          - Name: GCC
+            Level: 2
+          - Name: CLang
+            Level: 2
+          - Name: CMake
+            Level: 6
+          - Name: STL (C++17)
+            Level: 4
+          - Name: MSVC
+            Level: 2
+          - Name: MinGW
+            Level: 2
+          - Name: GCC
+            Level: 2
+          - Name: CLang
+            Level: 2
+          - Name: CMake
+            Level: 6
+          - Name: STL (C++17)
+            Level: 4
+          - Name: MSVC
+            Level: 2
+          - Name: MinGW
+            Level: 2
+          - Name: GCC
+            Level: 2
+          - Name: CLang
+            Level: 2
+          - Name: CMake
+            Level: 6
+      - Name: PHP
+        Level: 6
+        Requirements:
+          []
+      - Name: JS
+        Level: 6
+        Requirements:
+          []
+      - Name: HTML
+        Level: 6
+        Requirements:
+          []
+      - Name: STL (C++17)
+        Level: 6
+        Requirements:
+          []
+      - Name: YAML
+        Level: 6
+        Requirements:
+          []
+      - Name: Flash, ActionScript
+        Level: 5
+        Requirements:
+          []
+      - Name: CSS
+        Level: 4
+        Requirements:
+          []
+      - Name: Matlab
+        Level: 4
+        Requirements:
+          []
+      - Name: Python
+        Level: 4
+        Requirements:
+          []
+      - Name: SQL
+        Level: 4
+        Requirements:
+          []
+      - Name: Pascal
+        Level: 4
+        Requirements:
+          []
+      - Name: Delphi
+        Level: 4
+        Requirements:
+          []
+      - Name: Perl
+        Level: 4
+        Requirements:
+          []
+      - Name: GLSL
+        Level: 3
+        Requirements:
+          []
+      - Name: OpenGL
+        Level: 3
+        Requirements:
+          []
+      - Name: UltimatePP
+        Level: 3
+        Requirements:
+          []
+      - Name: NoSQL
+        Level: 2
+        Requirements:
+          []
+      - Name: CMake
+        Level: 2
+        Requirements:
+          []
+      - Name: VBScript
+        Level: 2
+        Requirements:
+          []
+      - Name: Assembler
+        Level: 2
+        Requirements:
+          []
+      - Name: Premake
+        Level: 2
+        Requirements:
+          []
+      - Name: Lua
+        Level: 1
+        Requirements:
+          []
+      - Name: C#
+        Level: 1
+        Requirements:
+          []
+      - Name: C++20
+        Level: 1
+        Requirements:
+          []
+      - Name: Android
+        Level: 1
+        Requirements:
+          []
+      - Name: Docker
+        Level: 1
+        Requirements:
+          []
+      - Name: Kubernetes
+        Level: 1
+        Requirements:
+          []
+      - Name: Ruby
+        Level: 1
+        Requirements:
+          []
+      - Name: Java
+        Level: 1
+        Requirements:
+          []
+      - Name: LLVM
+        Level: 1
+        Requirements:
+          []
+      - Name: Rust
+        Level: 1
+        Requirements:
+          []
+      - Name: Vulkan
+        Level: 1
+        Requirements:
+          []
+      - Name: DirectX
+        Level: 1
+        Requirements:
+          []
+      - Name: Kotlin
+        Level: 1
+        Requirements:
+          []
+      - Name: Golang
+        Level: 1
+        Requirements:
+          []
+      - Name: OpenCL
+        Level: 1
+        Requirements:
+          []
+      - Name: WebAssembly
+        Level: 1
+        Requirements:
+          []
+      - Name: TypeScript
+        Level: 1
+        Requirements:
+          []
+      - Name: D
+        Level: 1
+        Requirements:
+          []
+  - SkillsGroup: 2. Движки и фреймворки
     Skills:
-    - Name: jQuery
-      Level: 4
-    - Name: SDL
-      Level: 4
-    - Name: Dear ImGui
-      Level: 4
-    - Name: Qt
-      Level: 1
-    - Name: CUDA
-      Level: 1
-    - Name: FLTK
-      Level: 1
-    - Name: bgfx
-      Level: 1
-    - Name: wxWidgets
-      Level: 1
-    - Name: SFML
-      Level: 1
-    - Name: GSL
-      Level: 1
-    - Name: raylib
-      Level: 1
-    - Name: Boost
-      Level: 1
-    - Name: perforce
-      Level: 1
-    - Name: Sciter
-      Level: 1
-  - SkillsGroup: Инструменты
+      - Name: Savannah
+        Level: 10
+        Requirements:
+          []
+      - Name: Crystal Serpent Engine
+        Level: 10
+        Requirements:
+          []
+      - Name: PHP Fusion 7
+        Level: 6
+        Requirements:
+          []
+      - Name: jQuery
+        Level: 4
+        Requirements:
+          []
+      - Name: SDL
+        Level: 4
+        Requirements:
+          []
+      - Name: Dear ImGui
+        Level: 4
+        Requirements:
+          []
+      - Name: Drupal
+        Level: 4
+        Requirements:
+          []
+      - Name: Wordpress
+        Level: 4
+        Requirements:
+          []
+      - Name: PhpBB
+        Level: 4
+        Requirements:
+          []
+      - Name: Invision Power Board
+        Level: 4
+        Requirements:
+          []
+      - Name: vBulletin
+        Level: 4
+        Requirements:
+          []
+      - Name: Joomla!
+        Level: 4
+        Requirements:
+          []
+      - Name: MyBB
+        Level: 4
+        Requirements:
+          []
+      - Name: Dinamic Link Engine
+        Level: 4
+        Requirements:
+          []
+      - Name: MySQL
+        Level: 4
+        Requirements:
+          []
+      - Name: PostgreSQL
+        Level: 4
+        Requirements:
+          []
+      - Name: Phaser
+        Level: 4
+        Requirements:
+          []
+      - Name: Tilda
+        Level: 3
+        Requirements:
+          []
+      - Name: Symphony
+        Level: 2
+        Requirements:
+          []
+      - Name: Hazel
+        Level: 2
+        Requirements:
+          []
+      - Name: Unity
+        Level: 2
+        Requirements:
+          []
+      - Name: UltimatePP
+        Level: 2
+        Requirements:
+          []
+      - Name: Unreal Engine
+        Level: 2
+        Requirements:
+          []
+      - Name: Qt
+        Level: 1
+        Requirements:
+          []
+      - Name: CUDA
+        Level: 1
+        Requirements:
+          []
+      - Name: FLTK
+        Level: 1
+        Requirements:
+          []
+      - Name: bgfx
+        Level: 1
+        Requirements:
+          []
+      - Name: wxWidgets
+        Level: 1
+        Requirements:
+          []
+      - Name: SFML
+        Level: 1
+        Requirements:
+          []
+      - Name: GSL
+        Level: 1
+        Requirements:
+          []
+      - Name: raylib
+        Level: 1
+        Requirements:
+          []
+      - Name: Boost
+        Level: 1
+        Requirements:
+          []
+      - Name: perforce
+        Level: 1
+        Requirements:
+          []
+      - Name: Sciter
+        Level: 1
+        Requirements:
+          []
+      - Name: Laravel
+        Level: 1
+        Requirements:
+          []
+      - Name: Hugo
+        Level: 1
+        Requirements:
+          []
+      - Name: Nau Engine
+        Level: 1
+        Requirements:
+          []
+      - Name: Ogre 3D
+        Level: 1
+        Requirements:
+          []
+      - Name: Irrlicht
+        Level: 1
+        Requirements:
+          []
+      - Name: React.js
+        Level: 1
+        Requirements:
+          []
+      - Name: Angular
+        Level: 1
+        Requirements:
+          []
+  - SkillsGroup: 3. Софт
     Skills:
-    - Name: MS Office
-      Level: 7
-    - Name: Scrivener
-      Level: 7
-    - Name: yWriter
-      Level: 6
-    - Name: Git
-      Level: 6
-    - Name: Denwer
-      Level: 6
-    - Name: FileZilla Client
-      Level: 6
-    - Name: Sothink SWF Decompiler
-      Level: 6
-    - Name: Photoshop
-      Level: 6
-    - Name: GIMP
-      Level: 6
-    - Name: Open Server Panel
-      Level: 4
-    - Name: CodeBlocks
-      Level: 4
-    - Name: GitExtensions
-      Level: 4
-    - Name: MS Visual Studio
-      Level: 4
-    - Name: VS Code
-      Level: 4
-    - Name: Red Panda C++
-      Level: 4
-    - Name: Sublime Text
-      Level: 4
-    - Name: Eclipse C++
-      Level: 4
-    - Name: Matlab
-      Level: 4
-    - Name: Mathcad
-      Level: 4
-    - Name: Mathematica
-      Level: 4
-    - Name: WinSCP
-      Level: 4
-    - Name: Slax
-      Level: 3
-    - Name: UltimatePP
-      Level: 3
-    - Name: Blender
-      Level: 3
-    - Name: 3ds Max
-      Level: 3
-    - Name: MixCraft
-      Level: 3
-    - Name: MSYS
-      Level: 3
-    - Name: MSVC
-      Level: 3
-    - Name: MinGW
-      Level: 3
-    - Name: QT Creator
-      Level: 2
-    - Name: GCC
-      Level: 2
-    - Name: GDB
-      Level: 2
-    - Name: Unreal Engine
-      Level: 2
-    - Name: Unity
-      Level: 2
-    - Name: IDA
-      Level: 2
-    - Name: Jira
-      Level: 1
-    - Name: SVN
-      Level: 1
-    - Name: Mercurial
-      Level: 1
-    - Name: Ghidra
-      Level: 1
-    - Name: Tiled
-      Level: 1
-    - Name: Fuse
-      Level: 1
-    - Name: Poser
-      Level: 1
-  - SkillsGroup: Знания
+      - Name: Punk-o-Matic
+        Level: 8
+        Requirements:
+          []
+      - Name: MS Office
+        Level: 7
+        Requirements:
+          []
+      - Name: Scrivener
+        Level: 7
+        Requirements:
+          []
+      - Name: C++17
+        Level: 7
+        Requirements:
+          - Name: STL (C++17)
+            Level: 4
+          - Name: MSVC
+            Level: 2
+          - Name: MinGW
+            Level: 2
+          - Name: GCC
+            Level: 2
+          - Name: CLang
+            Level: 2
+          - Name: CMake
+            Level: 6
+      - Name: yWriter
+        Level: 6
+        Requirements:
+          []
+      - Name: Git
+        Level: 6
+        Requirements:
+          []
+      - Name: Denwer
+        Level: 6
+        Requirements:
+          []
+      - Name: FileZilla Client
+        Level: 6
+        Requirements:
+          []
+      - Name: Sothink SWF Decompiler
+        Level: 6
+        Requirements:
+          []
+      - Name: Photoshop
+        Level: 6
+        Requirements:
+          []
+      - Name: GIMP
+        Level: 6
+        Requirements:
+          []
+      - Name: Macromedia Flash
+        Level: 6
+        Requirements:
+          []
+      - Name: MixCraft
+        Level: 5
+        Requirements:
+          []
+      - Name: Open Server
+        Level: 5
+        Requirements:
+          []
+      - Name: Open Server Panel
+        Level: 4
+        Requirements:
+          []
+      - Name: CodeBlocks
+        Level: 4
+        Requirements:
+          []
+      - Name: GitExtensions
+        Level: 4
+        Requirements:
+          []
+      - Name: MS Visual Studio
+        Level: 4
+        Requirements:
+          []
+      - Name: VS Code
+        Level: 4
+        Requirements:
+          []
+      - Name: Red Panda C++
+        Level: 4
+        Requirements:
+          []
+      - Name: Sublime Text
+        Level: 4
+        Requirements:
+          []
+      - Name: Eclipse C++
+        Level: 4
+        Requirements:
+          []
+      - Name: Matlab
+        Level: 4
+        Requirements:
+          []
+      - Name: Mathcad
+        Level: 4
+        Requirements:
+          []
+      - Name: Mathematica
+        Level: 4
+        Requirements:
+          []
+      - Name: WinSCP
+        Level: 4
+        Requirements:
+          []
+      - Name: Slax
+        Level: 3
+        Requirements:
+          []
+      - Name: UltimatePP
+        Level: 3
+        Requirements:
+          []
+      - Name: Blender
+        Level: 3
+        Requirements:
+          []
+      - Name: 3ds Max
+        Level: 3
+        Requirements:
+          []
+      - Name: MSYS
+        Level: 3
+        Requirements:
+          []
+      - Name: MSVC
+        Level: 3
+        Requirements:
+          []
+      - Name: MinGW
+        Level: 3
+        Requirements:
+          []
+      - Name: SolidWorks
+        Level: 3
+        Requirements:
+          []
+      - Name: Matlab Simulink
+        Level: 3
+        Requirements:
+          []
+      - Name: QT Creator
+        Level: 2
+        Requirements:
+          []
+      - Name: GCC
+        Level: 2
+        Requirements:
+          []
+      - Name: GDB
+        Level: 2
+        Requirements:
+          []
+      - Name: Unreal Engine
+        Level: 2
+        Requirements:
+          []
+      - Name: Unity
+        Level: 2
+        Requirements:
+          []
+      - Name: IDA
+        Level: 2
+        Requirements:
+          []
+      - Name: AutoCAD
+        Level: 2
+        Requirements:
+          []
+      - Name: Компас 3D
+        Level: 2
+        Requirements:
+          []
+      - Name: Jira
+        Level: 1
+        Requirements:
+          []
+      - Name: SVN
+        Level: 1
+        Requirements:
+          []
+      - Name: Mercurial
+        Level: 1
+        Requirements:
+          []
+      - Name: Ghidra
+        Level: 1
+        Requirements:
+          []
+      - Name: Tiled
+        Level: 1
+        Requirements:
+          []
+      - Name: Fuse
+        Level: 1
+        Requirements:
+          []
+      - Name: Poser
+        Level: 1
+        Requirements:
+          []
+  - SkillsGroup: 4. Области знаний
     Skills:
-    - Name: Soft Skills
-      Level: 9
-    - Name: Радиолокация
-      Level: 8
-    - Name: Обработка сигналов
-      Level: 7
-    - Name: Структуры данных
-      Level: 7
-    - Name: Английский
-      Level: 7
-    - Name: Копирайтинг
-      Level: 7
-    - Name: Редактура текстов
-      Level: 6
-    - Name: Алгоритмы
-      Level: 6
-    - Name: Паттерны
-      Level: 6
-    - Name: Администрирование сайтов
-      Level: 6
-    - Name: Компиляторы
-      Level: 2
-    - Name: Нейросети
-      Level: 2
-    - Name: Машинное обучение
-      Level: 2
-    - Name: SOLID
-      Level: 2
-    - Name: Agile
-      Level: 2
-    - Name: Linux
-      Level: 2
-    - Name: MQTT
-      Level: 1
-    - Name: REST
-      Level: 1
-    - Name: Делопроизводство
-      Level: 1
-    - Name: Ведение бизнеса
-      Level: 1
+      - Name: Soft Skills
+        Level: 9
+        Requirements:
+          []
+      - Name: Радиолокация
+        Level: 8
+        Requirements:
+          []
+      - Name: Синтезирование апертуры
+        Level: 8
+        Requirements:
+          []
+      - Name: Русский
+        Level: 8
+        Requirements:
+          []
+      - Name: Обработка сигналов
+        Level: 7
+        Requirements:
+          []
+      - Name: Структуры данных
+        Level: 7
+        Requirements:
+          []
+      - Name: Английский
+        Level: 7
+        Requirements:
+          []
+      - Name: Копирайтинг
+        Level: 7
+        Requirements:
+          []
+      - Name: Многопозиционные РЛС
+        Level: 7
+        Requirements:
+          []
+      - Name: Редактура текстов
+        Level: 6
+        Requirements:
+          []
+      - Name: Алгоритмы
+        Level: 6
+        Requirements:
+          []
+      - Name: Паттерны
+        Level: 6
+        Requirements:
+          []
+      - Name: Администрирование сайтов
+        Level: 6
+        Requirements:
+          []
+      - Name: Проектный менеджмент
+        Level: 5
+        Requirements:
+          []
+      - Name: Дискрет. математика
+        Level: 5
+        Requirements:
+          []
+      - Name: Матанализ
+        Level: 5
+        Requirements:
+          []
+      - Name: Физика
+        Level: 5
+        Requirements:
+          []
+      - Name: Компиляторы
+        Level: 2
+        Requirements:
+          []
+      - Name: Нейросети
+        Level: 2
+        Requirements:
+          []
+      - Name: Машинное обучение
+        Level: 2
+        Requirements:
+          []
+      - Name: SOLID
+        Level: 2
+        Requirements:
+          []
+      - Name: Agile
+        Level: 2
+        Requirements:
+          []
+      - Name: Linux
+        Level: 2
+        Requirements:
+          []
+      - Name: Scrum
+        Level: 2
+        Requirements:
+          []
+      - Name: CI / CD
+        Level: 2
+        Requirements:
+          []
+      - Name: Китайский
+        Level: 2
+        Requirements:
+          []
+      - Name: MQTT
+        Level: 1
+        Requirements:
+          []
+      - Name: REST
+        Level: 1
+        Requirements:
+          []
+      - Name: Делопроизводство
+        Level: 1
+        Requirements:
+          []
+      - Name: Ведение бизнеса
+        Level: 1
+        Requirements:
+          []
+  - SkillsGroup: Groupless
+    Skills:
+      - Name: Стриминг
+        Level: 8
+        Requirements:
+          []
+      - Name: StarCraft II
+        Level: 8
+        Requirements:
+          []
+      - Name: Публичные выступления
+        Level: 8
+        Requirements:
+          []
+      - Name: Презентации
+        Level: 6
+        Requirements:
+          []
+      - Name: Писательское дело
+        Level: 5
+        Requirements:
+          []
+      - Name: Редакторское дело
+        Level: 5
+        Requirements:
+          []
+      - Name: Поэзия
+        Level: 4
+        Requirements:
+          []
+      - Name: Rock'n'Roll
+        Level: 3
+        Requirements:
+          []
+      - Name: Мангака
+        Level: 3
+        Requirements:
+          []
+      - Name: Тимлидерство
+        Level: 3
+        Requirements:
+          []
+      - Name: Электронная музыка
+        Level: 3
+        Requirements:
+          []

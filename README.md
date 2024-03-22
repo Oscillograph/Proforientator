@@ -1,18 +1,18 @@
-## Skills Checker ##
-An utility to help in personal skills management. Its main purpose are:
-+ present the person' skills and their current level of development;
-+ advice on skillsets to develop in order to fill certain expectations (for example, get a job).
+## Proforientator v1.0 ##
+A tool to store, evaluate and analize user's skills.
 
-The program should allow to:
-+ Add/Remove/Edit skills;
-+ Add/Remove/Edit skill groups;
-+ Edit the level of development of a skill;
-+ Add/Remove/Edit skillsets associated with a job;
-+ Present skills according to the selected level of development (for example, show highest/lowest or those not acquired yet);
-+ Present possible jobs corresponding to current skills development levels.
+## Features ##
++ Add/Edit/Remove skills
++ Assign levels of expertise to skills
++ Put skills in a skill group
++ Add/Edit/Delete groups of skills
++ Store skills data in a YAML file
++ The YAML file supports adding skill requirements
++ View skill requirements met and not met yet
++ Add/Edit/Remove skill requirements
 
-## Tech Stack ##
-+ C++17
-+ Color Console
-+ Utf-8 For Cpp
-+ Yaml-Cpp
+## Known bugs ##
++ Sometimes a skill group selection dropdown menu (in EditSkill mode) shows groups that do not exist, and some of those can crash an app 
+
+## Screenshot ##
+<img src="https://raw.githubusercontent.com/Oscillograph/Proforientator/main/data/screenshot.png" alt="Профориентатор" width="400"/>
