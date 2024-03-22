@@ -1,6 +1,7 @@
 ## Proforientator v1.0 ##
 MVP release.
 Based on [Savannah](https://github.com/Oscillograph/Savannah) application framework.
+
 Features:
 + Add/Edit/Remove skills
 + Add/Edit/Remove skill groups
