@@ -8,6 +8,7 @@
 *.dev
 *.exe
 *.layout
+*.zip
 /build/Proforientator_private.res
 /Proforientator_private.h
 /Proforientator_private.rc
